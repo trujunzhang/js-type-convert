@@ -1,0 +1,6 @@
+
+
+
+
+cd /Users/djzhang/Desktop/upwork-projects/CURRENT/Tools/js-type-convert/typings/react-intl &&
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/Tools/js-type-convert/react-intl/src/components/relative.js | react2dts --module-name toolbar>relative.d.ts
