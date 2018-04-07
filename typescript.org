@@ -1,0 +1,56 @@
+https://github.com/KnisterPeter/react-to-typescript-definitions
+
+
+1. react2dts
+
+cat <some/react/component.jsx> |react2dts --top-level-module
+
+* ActionButton
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/ActionButton/ActionButton.react.js | react2dts --module-name toolbar>actionButton.d.ts
+
+* Avatar
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Avatar/Avatar.react.js | react2dts --module-name toolbar>avatar.d.ts
+
+* Badge
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Badge/Badge.react.js | react2dts --module-name toolbar>/badge.d.ts
+
+* ButtomNavigation
+
+* Button
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Button/Button.react.js | react2dts --module-name toolbar>Button.d.ts
+
+* Card
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Card/Card.react.js | react2dts --module-name toolbar>Card.d.ts
+
+* Checkbox
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Checkbox/Checkbox.react.js | react2dts --module-name toolbar>Checkbox.d.ts
+
+* Container
+
+* ListItem
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/ListItem/ListItem.react.js | react2dts --module-name toolbar>ListItem.d.ts
+
+* Dialog
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Dialog/Dialog.react.js | react2dts --module-name toolbar>Dialog.d.ts
+
+* toolbar
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Toolbar/Toolbar.react.js | react2dts --module-name toolbar>toolbar.d.ts
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Toolbar/LeftElement.react.js | react2dts --module-name toolbar>leftElement.d.ts
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Toolbar/RightElement.react.js | react2dts --module-name toolbar>rightElement.d.ts
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Toolbar/CenterElement.react.js | react2dts --module-name toolbar>centerElement.d.ts
+
+
+* styles
+
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/styles/ThemeProvider.react.js  | react2dts --module-name toolbar>themeProvider.d.ts
+
+
+
