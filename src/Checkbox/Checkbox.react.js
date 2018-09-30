@@ -7,57 +7,6 @@ import IconToggle from '../IconToggle';
 import RippleFeedback from '../RippleFeedback';
 import { ViewPropTypes } from '../utils';
 
-const propTypes = {
-    /**
-    * Text will be shown after Icon
-    */
-    label: PropTypes.string.isRequired,
-    /**
-    * Value will be returned when onCheck is fired
-    */
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    /**
-    * True if it's check
-    */
-    checked: PropTypes.bool,
-    /**
-    * Is checkbox active
-    */
-    disabled: PropTypes.bool,
-    /**
-    * Will be shown when checked is false
-    */
-    uncheckedIcon: PropTypes.string,
-    /**
-    * Will be shown when checked is true
-    */
-    checkedIcon: PropTypes.string,
-    /**
-    * Event that is called when state is changed
-    */
-    onCheck: PropTypes.func.isRequired,
-    style: PropTypes.shape({
-        container: ViewPropTypes.style,
-        icon: IconToggle.propTypes.style,
-        label: Text.propTypes.style,
-    }),
-    /**
-     * Size of icon
-     */
-    size: PropTypes.number,
-};
-const defaultProps = {
-    checked: false,
-    checkedIcon: 'check-box',
-    uncheckedIcon: 'check-box-outline-blank',
-    disabled: false,
-    style: {},
-    size: 24,
-};
-const contextTypes = {
-    uiTheme: PropTypes.object.isRequired,
-};
-
 function getStyles(props, context) {
     const { checkbox, palette } = context.uiTheme;
     const { disabled } = props;
@@ -132,8 +81,56 @@ class Checkbox extends PureComponent {
     }
 }
 
-Checkbox.propTypes = propTypes;
-Checkbox.defaultProps = defaultProps;
-Checkbox.contextTypes = contextTypes;
+Checkbox.propTypes = {
+    /**
+    * Text will be shown after Icon
+    */
+    label: PropTypes.string.isRequired,
+    /**
+    * Value will be returned when onCheck is fired
+    */
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    /**
+    * True if it's check
+    */
+    checked: PropTypes.bool,
+    /**
+    * Is checkbox active
+    */
+    disabled: PropTypes.bool,
+    /**
+    * Will be shown when checked is false
+    */
+    uncheckedIcon: PropTypes.string,
+    /**
+    * Will be shown when checked is true
+    */
+    checkedIcon: PropTypes.string,
+    /**
+    * Event that is called when state is changed
+    */
+    onCheck: PropTypes.func.isRequired,
+    style: PropTypes.shape({
+        container: ViewPropTypes.style,
+        icon: IconToggle.propTypes.style,
+        label: Text.propTypes.style,
+    }),
+    /**
+     * Size of icon
+     */
+    size: PropTypes.number,
+};
+Checkbox.defaultProps = {
+    checked: false,
+    checkedIcon: 'check-box',
+    uncheckedIcon: 'check-box-outline-blank',
+    disabled: false,
+    style: {},
+    size: 24,
+};
+Checkbox.contextTypes = {
+    uiTheme: PropTypes.object.isRequired,
+};
+
 
 export default Checkbox;

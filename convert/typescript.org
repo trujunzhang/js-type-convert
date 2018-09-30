@@ -35,7 +35,8 @@ cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/
 cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Card/Card.react.js | react2dts --module-name toolbar>Card.d.ts
 
 * Checkbox
-cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Checkbox/Checkbox.react.js | react2dts --module-name toolbar>Checkbox.d.ts
+
+cat "/Users/djzhang/Desktop/upwork-projects/WORKING/Tools(used)/js-type-convert/src/Checkbox/Checkbox.react.js" | react2dts --module-name toolbar>checkbox.d.ts
 
 * Container
 
