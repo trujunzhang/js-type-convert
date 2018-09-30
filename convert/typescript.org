@@ -15,11 +15,16 @@ cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/
 
 * Badge
 
-cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Badge/Badge.react.js | react2dts --module-name toolbar>/badge.d.ts
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Badge/Badge.react.js | react2dts --module-name toolbar>badge.d.ts
 
 * Icon
 
-cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Icon/index.js | react2dts --module-name toolbar>/icon.d.ts
+cat /Users/djzhang/Desktop/upwork-projects/CURRENT/wix/react-native-material-ui/src/Icon/index.js | react2dts --module-name toolbar>icon.d.ts
+
+* IconToggle
+
+cat /Users/djzhang/Desktop/upwork-projects/WORKING/Tools(used)/js-type-convert/src/IconToggle/IconToggle.react.js | react2dts --module-name toolbar>iconToggle.d.ts
+
 
 * ButtomNavigation
 

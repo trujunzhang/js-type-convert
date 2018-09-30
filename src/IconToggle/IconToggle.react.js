@@ -9,62 +9,6 @@ import { ViewPropTypes } from '../utils';
 import { ELEVATION_ZINDEX } from '../styles/constants';
 import Icon from '../Icon';
 
-const propTypes = {
-    color: PropTypes.string,
-    /**
-    * The color of the underlay that will show when the touch is active.
-    */
-    underlayColor: PropTypes.string,
-    /**
-    * Max opacity of ripple effect
-    */
-    maxOpacity: PropTypes.number,
-    /**
-    * Size of underlayColor
-    */
-    percent: PropTypes.number,
-    /**
-    * If true, the interaction will be forbidden
-    */
-    disabled: PropTypes.bool,
-    /**
-    * Size of icon (default is 24 - see spacing in palette)
-    */
-    size: PropTypes.number,
-    /**
-    * Name of icon to show
-    */
-    name: PropTypes.string.isRequired,
-    /**
-    * It'll be used instead of icon (see props name) if exists
-    */
-    children: PropTypes.element,
-    /**
-    * Call when icon was pressed
-    */
-    onPress: PropTypes.func,
-    style: PropTypes.oneOfType([
-        PropTypes.shape({
-            container: ViewPropTypes.style,
-            icon: Text.propTypes.style,
-        }),
-        PropTypes.array,
-    ]),
-};
-const defaultProps = {
-    children: null,
-    onPress: null,
-    color: null,
-    underlayColor: null,
-    size: 24,
-    disabled: false,
-    percent: 90,
-    maxOpacity: 0.16,
-    style: {},
-};
-const contextTypes = {
-    uiTheme: PropTypes.object.isRequired,
-};
 
 function getStyles(props, context, state) {
     const { iconToggle, palette } = context.uiTheme;
@@ -241,9 +185,62 @@ class IconToggle extends PureComponent {
     }
 }
 
-IconToggle.propTypes = propTypes;
-IconToggle.defaultProps = defaultProps;
-IconToggle.contextTypes = contextTypes;
+IconToggle.propTypes =  {
+    color: PropTypes.string,
+    /**
+    * The color of the underlay that will show when the touch is active.
+    */
+    underlayColor: PropTypes.string,
+    /**
+    * Max opacity of ripple effect
+    */
+    maxOpacity: PropTypes.number,
+    /**
+    * Size of underlayColor
+    */
+    percent: PropTypes.number,
+    /**
+    * If true, the interaction will be forbidden
+    */
+    disabled: PropTypes.bool,
+    /**
+    * Size of icon (default is 24 - see spacing in palette)
+    */
+    size: PropTypes.number,
+    /**
+    * Name of icon to show
+    */
+    name: PropTypes.string.isRequired,
+    /**
+    * It'll be used instead of icon (see props name) if exists
+    */
+    children: PropTypes.element,
+    /**
+    * Call when icon was pressed
+    */
+    onPress: PropTypes.func,
+    style: PropTypes.oneOfType([
+        PropTypes.shape({
+            container: ViewPropTypes.style,
+            icon: Text.propTypes.style,
+        }),
+        PropTypes.array,
+    ]),
+};
 
+IconToggle.defaultProps = {
+    children: null,
+    onPress: null,
+    color: null,
+    underlayColor: null,
+    size: 24,
+    disabled: false,
+    percent: 90,
+    maxOpacity: 0.16,
+    style: {},
+};
+IconToggle.contextTypes = {
+    uiTheme: PropTypes.object.isRequired,
+};
 
 export default IconToggle;
